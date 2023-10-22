@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <SDL2/SDL.h>
 
 // Die folgenden Kommentare beschreiben Datenstrukturen und Funktionen
 // Die Datenstrukturen und Funktionen die weiter hinten im Text beschrieben sind,
@@ -14,8 +15,25 @@
 // Der Bildschirm hat eine Auflösung (Breite x Höhe)
 // Kann zur Ausgabe einer PPM-Datei verwendet werden oder
 // mit SDL2 implementiert werden.
+void create_window(SDL_Window* window, SDL_Renderer* renderer){
+  SDL_Init(SDL_INIT_VIDEO);
+  SDL_CreateWindowAndRenderer(640, 480, 0, &window, &renderer);
+  SDL_RenderSetScale(renderer, 1, 1);
 
+  SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+  SDL_RenderClear(renderer);
 
+  SDL_SetRenderDrawColor(renderer, 255,255,255,255);
+  SDL_RenderDrawLine(renderer, 320, 200, 300, 240);
+
+  SDL_SetRenderDrawColor(renderer, 255,255,255,255);
+  SDL_RenderDrawLine(renderer, 300, 240, 340, 240);
+
+  SDL_RenderDrawLine(renderer, 340, 240, 320, 200);
+  SDL_RenderPresent(renderer);
+
+  SDL_Delay(3000);
+}
 
 // Eine "Kamera", die von einem Augenpunkt aus in eine Richtung senkrecht auf ein Rechteck (das Bild) zeigt.
 // Für das Rechteck muss die Auflösung oder alternativ die Pixelbreite und -höhe bekannt sein.
@@ -67,6 +85,9 @@
 
 int main(void) {
   // Bildschirm erstellen
+  SDL_Window* window; 
+  SDL_Renderer* renderer;
+  create_window(window, renderer); 
   // Kamera erstellen
   // Für jede Pixelkoordinate x,y
   //   Sehstrahl für x,y mit Kamera erzeugen

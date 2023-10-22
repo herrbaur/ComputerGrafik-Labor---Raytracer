@@ -1,5 +1,6 @@
 /home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/math_test.dir
 /home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/geometry_test.dir
+/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/raytracer.dir
 /home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/edit_cache.dir
 /home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/rebuild_cache.dir
 /home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles/list_install_components.dir

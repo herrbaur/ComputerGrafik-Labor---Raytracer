@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/raytracer.dir/raytracer.cc.o -o raytracer  -lSDL2 

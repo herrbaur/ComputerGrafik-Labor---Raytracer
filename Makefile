@@ -188,6 +188,19 @@ geometry_test/fast:
 .PHONY : geometry_test/fast
 
 #=============================================================================
+# Target rules for targets named raytracer
+
+# Build rule for target.
+raytracer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raytracer
+.PHONY : raytracer
+
+# fast build rule for target.
+raytracer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/build
+.PHONY : raytracer/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -338,6 +351,30 @@ math_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_test.dir/build.make CMakeFiles/math_test.dir/math_test.cc.s
 .PHONY : math_test.cc.s
 
+raytracer.o: raytracer.cc.o
+.PHONY : raytracer.o
+
+# target to build an object file
+raytracer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/raytracer.cc.o
+.PHONY : raytracer.cc.o
+
+raytracer.i: raytracer.cc.i
+.PHONY : raytracer.i
+
+# target to preprocess a source file
+raytracer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/raytracer.cc.i
+.PHONY : raytracer.cc.i
+
+raytracer.s: raytracer.cc.s
+.PHONY : raytracer.s
+
+# target to generate assembly for a file
+raytracer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/raytracer.cc.s
+.PHONY : raytracer.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -356,6 +393,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... math_test"
+	@echo "... raytracer"
 	@echo "... geometry.o"
 	@echo "... geometry.i"
 	@echo "... geometry.s"
@@ -368,6 +406,9 @@ help:
 	@echo "... math_test.o"
 	@echo "... math_test.i"
 	@echo "... math_test.s"
+	@echo "... raytracer.o"
+	@echo "... raytracer.i"
+	@echo "... raytracer.s"
 .PHONY : help
 
 
