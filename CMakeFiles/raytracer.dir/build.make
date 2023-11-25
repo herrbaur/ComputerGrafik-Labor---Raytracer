@@ -83,17 +83,49 @@ CMakeFiles/raytracer.dir/raytracer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/raytracer.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/raytracer.cc" -o CMakeFiles/raytracer.dir/raytracer.cc.s
 
+CMakeFiles/raytracer.dir/math.cc.o: CMakeFiles/raytracer.dir/flags.make
+CMakeFiles/raytracer.dir/math.cc.o: math.cc
+CMakeFiles/raytracer.dir/math.cc.o: CMakeFiles/raytracer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/raytracer.dir/math.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/math.cc.o -MF CMakeFiles/raytracer.dir/math.cc.o.d -o CMakeFiles/raytracer.dir/math.cc.o -c "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/math.cc"
+
+CMakeFiles/raytracer.dir/math.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/math.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/math.cc" > CMakeFiles/raytracer.dir/math.cc.i
+
+CMakeFiles/raytracer.dir/math.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/math.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/math.cc" -o CMakeFiles/raytracer.dir/math.cc.s
+
+CMakeFiles/raytracer.dir/geometry.cc.o: CMakeFiles/raytracer.dir/flags.make
+CMakeFiles/raytracer.dir/geometry.cc.o: geometry.cc
+CMakeFiles/raytracer.dir/geometry.cc.o: CMakeFiles/raytracer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/raytracer.dir/geometry.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raytracer.dir/geometry.cc.o -MF CMakeFiles/raytracer.dir/geometry.cc.o.d -o CMakeFiles/raytracer.dir/geometry.cc.o -c "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/geometry.cc"
+
+CMakeFiles/raytracer.dir/geometry.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/raytracer.dir/geometry.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/geometry.cc" > CMakeFiles/raytracer.dir/geometry.cc.i
+
+CMakeFiles/raytracer.dir/geometry.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/raytracer.dir/geometry.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/geometry.cc" -o CMakeFiles/raytracer.dir/geometry.cc.s
+
 # Object files for target raytracer
 raytracer_OBJECTS = \
-"CMakeFiles/raytracer.dir/raytracer.cc.o"
+"CMakeFiles/raytracer.dir/raytracer.cc.o" \
+"CMakeFiles/raytracer.dir/math.cc.o" \
+"CMakeFiles/raytracer.dir/geometry.cc.o"
 
 # External object files for target raytracer
 raytracer_EXTERNAL_OBJECTS =
 
 raytracer: CMakeFiles/raytracer.dir/raytracer.cc.o
+raytracer: CMakeFiles/raytracer.dir/math.cc.o
+raytracer: CMakeFiles/raytracer.dir/geometry.cc.o
 raytracer: CMakeFiles/raytracer.dir/build.make
 raytracer: CMakeFiles/raytracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raytracer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/sebbo/Documents/HKA - Informatik Bachelor/4. Semester/Computer Grafik/Computer Grafik Labor/Labor Aufgabe 2/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable raytracer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raytracer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

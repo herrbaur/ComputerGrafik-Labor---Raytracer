@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/raytracer.dir/geometry.cc.o"
+  "CMakeFiles/raytracer.dir/geometry.cc.o.d"
+  "CMakeFiles/raytracer.dir/math.cc.o"
+  "CMakeFiles/raytracer.dir/math.cc.o.d"
   "CMakeFiles/raytracer.dir/raytracer.cc.o"
   "CMakeFiles/raytracer.dir/raytracer.cc.o.d"
   "raytracer"

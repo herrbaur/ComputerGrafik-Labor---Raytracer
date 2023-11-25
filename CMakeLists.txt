@@ -10,7 +10,8 @@ add_executable(math_test math_test.cc math.cc)
 target_link_libraries(math_test gtest gtest_main)
 add_executable(geometry_test geometry_test.cc geometry.cc math.cc)
 target_link_libraries(geometry_test gtest gtest_main)
-add_executable(raytracer raytracer.cc)
+add_executable(raytracer raytracer.cc math.cc geometry.cc)
 target_link_libraries(raytracer SDL2)
+
 
 

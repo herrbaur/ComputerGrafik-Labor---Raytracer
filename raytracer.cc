@@ -4,6 +4,11 @@
 #include <vector>
 #include <algorithm>
 #include <SDL2/SDL.h>
+#include "math.h"
+#include "geometry.h"
+#include "color.h"
+
+using namespace std;
 
 // Die folgenden Kommentare beschreiben Datenstrukturen und Funktionen
 // Die Datenstrukturen und Funktionen die weiter hinten im Text beschrieben sind,
@@ -15,6 +20,9 @@
 // Der Bildschirm hat eine Auflösung (Breite x Höhe)
 // Kann zur Ausgabe einer PPM-Datei verwendet werden oder
 // mit SDL2 implementiert werden.
+
+
+/*
 void create_window(SDL_Window* window, SDL_Renderer* renderer){
   SDL_Init(SDL_INIT_VIDEO);
   SDL_CreateWindowAndRenderer(640, 480, 0, &window, &renderer);
@@ -34,11 +42,12 @@ void create_window(SDL_Window* window, SDL_Renderer* renderer){
 
   SDL_Delay(3000);
 }
+**/
+
 
 // Eine "Kamera", die von einem Augenpunkt aus in eine Richtung senkrecht auf ein Rechteck (das Bild) zeigt.
 // Für das Rechteck muss die Auflösung oder alternativ die Pixelbreite und -höhe bekannt sein.
 // Für ein Pixel mit Bildkoordinate kann ein Sehstrahl erzeugt werden.
-
 
 
 // Für die "Farbe" benötigt man nicht unbedingt eine eigene Datenstruktur.
@@ -85,9 +94,33 @@ void create_window(SDL_Window* window, SDL_Renderer* renderer){
 
 int main(void) {
   // Bildschirm erstellen
+
+    // Image
+
+    int image_width = 256;
+    int image_height = 256;
+
+    // Render
+
+    cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
+
+    for (int j = 0; j < image_height; ++j) {
+      clog << "\rScanlines remaining: " << (image_height - j) << ' ' << flush;
+      for (int i = 0; i < image_width; ++i) {
+        auto pixel_color = color({float(i)/(image_width-1), float(j)/(image_height-1), float(0)});
+        write_color(std::cout, pixel_color);
+      }
+    }
+
+    clog << "\rDone.                 \n";
+
+  /**
   SDL_Window* window; 
   SDL_Renderer* renderer;
   create_window(window, renderer); 
+  */
+
+
   // Kamera erstellen
   // Für jede Pixelkoordinate x,y
   //   Sehstrahl für x,y mit Kamera erzeugen

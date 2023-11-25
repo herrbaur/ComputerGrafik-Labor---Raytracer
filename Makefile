@@ -258,6 +258,7 @@ geometry.o: geometry.cc.o
 # target to build an object file
 geometry.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/geometry.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/geometry.cc.o
 .PHONY : geometry.cc.o
 
 geometry.i: geometry.cc.i
@@ -266,6 +267,7 @@ geometry.i: geometry.cc.i
 # target to preprocess a source file
 geometry.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/geometry.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/geometry.cc.i
 .PHONY : geometry.cc.i
 
 geometry.s: geometry.cc.s
@@ -274,6 +276,7 @@ geometry.s: geometry.cc.s
 # target to generate assembly for a file
 geometry.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/geometry.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/geometry.cc.s
 .PHONY : geometry.cc.s
 
 geometry_test.o: geometry_test.cc.o
@@ -307,6 +310,7 @@ math.o: math.cc.o
 math.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_test.dir/build.make CMakeFiles/math_test.dir/math.cc.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/math.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/math.cc.o
 .PHONY : math.cc.o
 
 math.i: math.cc.i
@@ -316,6 +320,7 @@ math.i: math.cc.i
 math.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_test.dir/build.make CMakeFiles/math_test.dir/math.cc.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/math.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/math.cc.i
 .PHONY : math.cc.i
 
 math.s: math.cc.s
@@ -325,6 +330,7 @@ math.s: math.cc.s
 math.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_test.dir/build.make CMakeFiles/math_test.dir/math.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geometry_test.dir/build.make CMakeFiles/geometry_test.dir/math.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raytracer.dir/build.make CMakeFiles/raytracer.dir/math.cc.s
 .PHONY : math.cc.s
 
 math_test.o: math_test.cc.o
